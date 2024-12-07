@@ -128,6 +128,8 @@ apple 5
 pineapple 9
 yoyo 4
 """
+import pickle
+
 
 # users = {"Sula" : "inactive", "Aksaule" : "active", "Aruzhan" : "inactive"}
 # print(users.items())
@@ -202,3 +204,85 @@ yoyo 4
 #             return "just ask Aksi what is it"
 #
 # print(http_error(403))
+
+# class Point:
+#     __match_args__ = ("x", "y")
+#     def __init__(self, x, y):
+#         self.x = x
+#         self.y = y
+#
+# def where_is(point):
+#     match point:
+#         case Point(x=0, y=0):
+#             print("Origin")
+#         case Point(x=0, y=y):
+#             print(f"Y point is {y}")
+#         case Point(x=x, y=0):
+#             print(f"X point is {x}")
+#         case Point(x, y) if x == y:
+#             print(f"X point equal Y point")
+#         case Point():
+#             print("Somewhere else")
+#         case _:
+#             print("Not a point")
+#
+# p1 = Point(4, 0)
+# where_is(p1) #X point is 4
+#
+# p2 = Point(9, 6)
+# where_is(p2) #Somewhere else
+#
+# p3 = Point(6, 6)
+# where_is(p3) #X point equal Y point
+
+##############match in list and tuple
+# match [1, 2, 3]:
+#     case x, y, z:
+#         print(x, y, z)
+
+# match [1, 2, 3, 4]:
+#     case x, y, *_:
+#         print(x, y)
+
+#########def
+
+####global
+# x = 10
+#
+# def update_global():
+#     global x
+#     x = 20
+#
+# print(x)
+# update_global()
+# print(x)
+
+######default arguments
+# def ask_ok(prompt, retries=4, reminder='Please try again!'):
+#     while True:
+#         reply = input(prompt)
+#         if reply in {'y', 'ye', 'yes'}:
+#             return True
+#         if reply in {'n', 'no', 'nop', 'nope'}:
+#             return False
+#         retries = retries - 1
+#         if retries < 0:
+#             raise ValueError('invalid user response')
+#         print(reminder)
+#
+# ask_ok('Do you really want to quit?')
+
+# i = 5
+#
+# def f(arg=i):
+#     print(arg)
+#
+# i = 6
+# f() #output:5
+
+def f(a, L=[]):
+    L.append(a)
+    return L
+
+print(f(1)) #[1]
+print(f(2)) #[1, 2]
