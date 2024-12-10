@@ -280,9 +280,58 @@ import pickle
 # i = 6
 # f() #output:5
 
-def f(a, L=[]):
-    L.append(a)
-    return L
+# def f(a, L=[]):
+#     L.append(a)
+#     return L
+#
+# print(f(1)) #[1]
+# print(f(2)) #[1, 2]
 
-print(f(1)) #[1]
-print(f(2)) #[1, 2]
+# def get_info(nation, name='Aksi', age='24'):
+#     print(f"This her name {name}")
+#     print(f"This is her {age}")
+#     print(f"{name} nation is {nation}")
+#
+# get_info(nation='kaz', age="5")
+
+# def cheeseshop(kind, *arguments, **keywords):
+#     print("-- Do you have any", kind, "?")
+#     print("-- I'm sorry, we're all out of", kind)
+#     for arg in arguments:
+#         print(arg)
+#     print("-" * 40)
+#     for kw in keywords:
+#         print(kw, ":", keywords[kw])
+#
+# cheeseshop("Limburger", "It's very runny, sir.",
+#            "It's really very, VERY runny, sir.",
+#            shopkeeper="Michael Palin",
+#            client="John Cleese",
+#            sketch="Cheese Shop Sketch")
+
+#output:
+"""
+-- Do you have any Limburger ?
+-- I'm sorry, we're all out of Limburger
+It's very runny, sir.
+It's really very, VERY runny, sir.
+----------------------------------------
+shopkeeper : Michael Palin
+client : John Cleese
+sketch : Cheese Shop Sketch
+"""
+
+# def position_only(name, /):
+#     print('This is', name)
+#
+# position_only('Ths')
+#
+# def named_only(*, name):
+#     print(f'This is name, {name}')
+# named_only(name="ttoo")
+
+# def combined_example(pos_only, /, standard, *, kwd_only):
+#     print(pos_only, standard, kwd_only)
+#
+# combined_example(1, standard=2, kwd_only=3)
+# #output: 1 2 3
