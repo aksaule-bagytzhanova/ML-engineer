@@ -335,3 +335,31 @@ sketch : Cheese Shop Sketch
 #
 # combined_example(1, standard=2, kwd_only=3)
 # #output: 1 2 3
+
+#unpacking
+#list
+# a = list(range(2, 8))
+# print(a)
+#
+# args= [4, 9]
+# a = list(range(*args))
+# print(a)
+
+#dict
+# def parrot(voltage, state='a stiff', action='voom'):
+#     print("-- This parrot wouldn't", action, end=' ')
+#     print("if you put", voltage, "volts through it.", end=' ')
+#     print("E's", state, "!")
+#
+# d = {"voltage": "four million", "state": "bleedin' demised", "action": "VOOM"}
+# parrot(**d)
+
+#lambda
+def make_incrementor(n):
+    return lambda x: x + n
+
+f = make_incrementor(40)
+print(f(8)) #output 48
+
+print(f(55)) #95
+
