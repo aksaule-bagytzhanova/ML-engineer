@@ -355,11 +355,88 @@ sketch : Cheese Shop Sketch
 # parrot(**d)
 
 #lambda
-def make_incrementor(n):
-    return lambda x: x + n
+# def make_incrementor(n):
+#     return lambda x: x + n
+#
+# f = make_incrementor(40)
+# print(f(8)) #output 48
+#
+# print(f(55)) #95
 
-f = make_incrementor(40)
-print(f(8)) #output 48
+######5 List methods
+# fruits = ['orange', 'apple', 'pear', 'banana', 'kiwi', 'apple', 'banana']
+#
+# print("#######append#########")
+# fruits.append('kiwi')
+# print(fruits)
+#
+# print("#######extend########")
+# fruits_2 = ['apple', 'pineapple']
+# fruits.extend(fruits_2)
+# print(fruits)
+#
+# print("#########insert########")
+# fruits.insert(1, 'watermelon')
+# print(fruits)
+#
+# print("#########remove#########")
+# fruits.remove('apple')
+# print(fruits)
+#
+# print("#########pop###########")
+# f_item = fruits.pop(5)
+# print(f_item)
+# print(fruits)
+#
+# print("#########clear##########")
+# fruits_2.clear()
+# print(fruits_2)
+#
+# print("##########index##########")
+# a = fruits.index('kiwi')
+# print("index work of kiwi", a)
+#
+# print("##########count##########")
+# r = fruits.count('kiwi')
+# print(r)
+#
+# print("##########sort##########")
+# numbers_list = [5, 7, 9, 4, 13, 65, 0, 6, 1]
+# numbers_list.sort()
+# print(numbers_list)
+#
+# print("##########reverse##########")
+# numbers_list.reverse()
+# print(numbers_list)
+#
+# print("##########copy##########")
+# numbers_copy = numbers_list.copy()
+# print(numbers_copy)
 
-print(f(55)) #95
+#####Stacks
+# stack = [3, 4, 5]
+#
+# stack.append(9)
+# stack.append(4)
+# print(stack)
+#
+# stack.pop()
+# print(stack)
 
+#####Queue
+# from collections import deque
+#
+# queue = deque(['Aksi', 'Sula', 'Elmira', 'Jankuat'])
+#
+# queue.append('Bakut')
+# print(queue)
+#
+# queue.appendleft('Azamat')
+# print(queue)
+#
+# queue.pop()
+# print(queue)
+
+########List Comprehensions
+a = lambda x: x**2, range(10)
+print(a)
