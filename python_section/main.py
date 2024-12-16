@@ -438,5 +438,86 @@ sketch : Cheese Shop Sketch
 # print(queue)
 
 ########List Comprehensions
-a = lambda x: x**2, range(10)
-print(a)
+# a = list(map(lambda x: x**2, range(10)))
+# ###or
+# squares = [x**2 for x in range(10)]
+# print(squares)
+
+# from math import pi
+# out = [str(round(pi, i)) for i in range(1, 6)]
+# print(out)
+
+#######Nested List Comprehensions
+# matrix = [
+#     [1, 2, 3, 4],
+#     [5, 6, 7, 8],
+#     [9, 10, 11, 12],
+# ]
+# column_to_row = [[row[i] for row in matrix] for i in range(4)]
+# print(column_to_row)
+#
+# print("this is # matrix", *matrix)
+# print("this is just matrix", matrix)
+#
+# column_to_row_2 = list(zip(*matrix))
+# print(column_to_row_2)
+
+
+#####DEL
+# numbers_list = [1, 2, 4, 6, 3, 5]
+# del numbers_list[4]
+# print(numbers_list)
+#
+# del numbers_list[:]
+# print(numbers_list)
+
+
+######Tuple
+# this_is_tuple = 3, 6, 45
+# print(this_is_tuple)
+# print(this_is_tuple[1])
+#
+# nested_tuple = this_is_tuple, (90, 455, 1)
+# print(nested_tuple)
+#
+# #tuples are immutable
+#
+# new_tuple = ()
+# print(len(new_tuple))
+# print(len(this_is_tuple))
+#
+# #unpacking
+# n1, n2, n3 = this_is_tuple
+# print(n1, n2, n3)
+
+
+########Sets
+# basket = {'apple', 'orange', 'apple', 'pear', 'orange', 'banana'}
+# print(basket)
+#
+# print("apple" in basket) #True
+#
+# a = set('abracadabra')
+# b = set('alacazam')
+# print(a) #{'r', 'a', 'd', 'b', 'c'}
+# print(b) #{'l', 'm', 'a', 'z', 'c'}
+#
+# print(a-b) #{'r', 'b', 'd'} letters in a but not in b
+# print(a|b) #{'c', 'd', 'z', 'b', 'l', 'm', 'r', 'a'}
+# print(a&b) #{'c', 'a'}
+# print(a^b) #{'d', 'b', 'z', 'm', 'r', 'l'}
+
+########Dictionary
+tel = {'jack': 4098, 'sape': 4139}
+tel['guido'] = 4055
+print(tel)
+
+print(tel['jack'])
+
+tel['deleted_item'] = 555
+print(tel)
+del tel[('deleted_item')]
+print(tel)
+
+new_dict = dict(sape=4139, guido=4127, jack=4098)
+print(new_dict)
