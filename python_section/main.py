@@ -508,16 +508,45 @@ sketch : Cheese Shop Sketch
 # print(a^b) #{'d', 'b', 'z', 'm', 'r', 'l'}
 
 ########Dictionary
-tel = {'jack': 4098, 'sape': 4139}
-tel['guido'] = 4055
-print(tel)
+# tel = {'jack': 4098, 'sape': 4139}
+# tel['guido'] = 4055
+# print(tel)
+#
+# print(tel['jack'])
+#
+# tel['deleted_item'] = 555
+# print(tel)
+# del tel[('deleted_item')]
+# print(tel)
+#
+# new_dict = dict(sape=4139, guido=4127, jack=4098)
+# print(new_dict)
 
-print(tel['jack'])
+# knights = {'gallahad': 'the pure', 'robin': 'the brave'}
+# for i in knights.items():
+#     print(i)
+#
+# print(knights.items())
 
-tel['deleted_item'] = 555
-print(tel)
-del tel[('deleted_item')]
-print(tel)
+########enumerate
+for index, value in enumerate(['tic', 'tac', 'toe']):
+    print(index, value)
 
-new_dict = dict(sape=4139, guido=4127, jack=4098)
-print(new_dict)
+
+########zip
+questions = ['name', 'age', 'educations']
+answers = ['Aksi', '24', 'SDU']
+
+print(list(zip(questions, answers))) #[('name', 'Aksi'), ('age', '24'), ('educations', 'SDU')]
+
+
+###########reversed
+for i in reversed(range(1, 9)):
+    print(i)
+
+
+#########sorted
+basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+for i in sorted(basket):
+    print(i)
+
