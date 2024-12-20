@@ -528,25 +528,59 @@ sketch : Cheese Shop Sketch
 #
 # print(knights.items())
 
-########enumerate
-for index, value in enumerate(['tic', 'tac', 'toe']):
-    print(index, value)
+# ########enumerate
+# for index, value in enumerate(['tic', 'tac', 'toe']):
+#     print(index, value)
+#
+#
+# ########zip
+# questions = ['name', 'age', 'educations']
+# answers = ['Aksi', '24', 'SDU']
+#
+# print(list(zip(questions, answers))) #[('name', 'Aksi'), ('age', '24'), ('educations', 'SDU')]
+#
+#
+# ###########reversed
+# for i in reversed(range(1, 9)):
+#     print(i)
+#
+#
+# #########sorted
+# basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
+# for i in sorted(basket):
+#     print(i)
+
+# import fibo as f
+#
+# print('Importing function')
+# f.fib(1000)
+#
+# print(f.__name__)
+#
+# from fibo import fib, fib2
+# fib(100)
+#
+# from fibo import fib as fibonacci
+# fibonacci(9000)
+
+# import sys
+#
+# print(sys.path)
+
+# import fibo, sys
+#
+# print('####################################')
+# print(dir(fibo))
+#
+# print('####################################')
+# print(dir(sys))
+#
+# import packages.pk1
 
 
-########zip
-questions = ['name', 'age', 'educations']
-answers = ['Aksi', '24', 'SDU']
+######Chapter 7
+year = 2016
+event = 'Referendum'
 
-print(list(zip(questions, answers))) #[('name', 'Aksi'), ('age', '24'), ('educations', 'SDU')]
-
-
-###########reversed
-for i in reversed(range(1, 9)):
-    print(i)
-
-
-#########sorted
-basket = ['apple', 'orange', 'apple', 'pear', 'orange', 'banana']
-for i in sorted(basket):
-    print(i)
+print(f"this is year {year}, this is event {event}")
 
