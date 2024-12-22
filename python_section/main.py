@@ -579,8 +579,26 @@ sketch : Cheese Shop Sketch
 
 
 ######Chapter 7
-year = 2016
-event = 'Referendum'
+# year = 2016
+# event = 'Referendum'
+#
+# print(f"this is year {year}, this is event {event}")
 
-print(f"this is year {year}, this is event {event}")
+# yes_votes = 42_572_654
+# total_votes = 85_705_149
+# percentage = yes_votes / total_votes
+# print('{:-9} Yes votes {:2.2%}'.format(yes_votes, percentage))
+
+#####str or repr
+# s = "Hello world"
+# print(str(s))
+# print(repr(s))
+
+####formated str
+# import math
+# print(f"This is pi value {math.pi:.3f}.")
+
+# table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 7678}
+# for name, phone in table.items():
+#     print(f'{name:10} ==> {phone:10d}')
 
