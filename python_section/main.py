@@ -602,3 +602,20 @@ sketch : Cheese Shop Sketch
 # for name, phone in table.items():
 #     print(f'{name:10} ==> {phone:10d}')
 
+####string format
+# print('We are the {} who say "{}!"'.format('knights', 'Ni'))
+# print('{1} and {0} '.format('eggs', 'orange'))
+#
+# print("This {food} is really {mood}".format(food='pie', mood='absolutely horrible'))
+
+# table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 8637678}
+# print("This is score Sjoerd {0[Sjoerd]:d}, "
+#       "score Jack {0[Jack]:d}, "
+#       "score Dcab {0[Dcab]:d}".format(table))
+
+# table = {'Sjoerd': 4127, 'Jack': 4098, 'Dcab': 8637678}
+# print('Sj {Sjoerd:d}, Jack {Jack}'.format(**table))
+
+# for x in range(1, 11):
+#     print('{0:2d} {1:3d} {2:6d}'.format(x, x*x, x*x*x))
+#
