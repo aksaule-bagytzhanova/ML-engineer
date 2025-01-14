@@ -619,3 +619,43 @@ sketch : Cheese Shop Sketch
 # for x in range(1, 11):
 #     print('{0:2d} {1:3d} {2:6d}'.format(x, x*x, x*x*x))
 #
+
+####manual string formatting
+# print('x'.rjust(5))
+# print('x'.ljust(5))
+# print('x'.center(5))
+
+###reading and writing files
+# f = open('workfile', 'w', encoding='utf-8')
+
+# with open('workfile', encoding='utf-8') as f:
+#     read_data = f.read()
+#
+# print(read_data)
+# f.close()
+
+# f = open('workfile', 'r+', encoding='utf-8')
+# print(f.read(5))
+# print(f.readline())
+# print(f.readline())
+
+# print(list(f))
+# print(f.readlines())
+# f.write("Process")
+# print(f.tell())
+# f.close()
+
+###Saving data with json
+# import json
+
+# x = [1, 'simple', 'list']
+# print(json.dumps(x))
+
+# x = [1, 'simple', 'list']
+# json_string = json.dumps(x)
+# print(json_string)  # Вывод: '[1, "simple", "list"]'
+
+# x = [1, 'simple', 'list']
+#
+# with open('data.json', 'w', encoding='utf-8') as f:
+#     json.dump(x, f)
