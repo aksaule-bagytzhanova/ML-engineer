@@ -659,3 +659,12 @@ sketch : Cheese Shop Sketch
 #
 # with open('data.json', 'w', encoding='utf-8') as f:
 #     json.dump(x, f)
+
+
+#####Exceptions and Errors
+while True:
+    try:
+        x = int(input("Enter number please: "))
+        break
+    except ValueError:
+        print("Oops, That was no valid number, try again please")
