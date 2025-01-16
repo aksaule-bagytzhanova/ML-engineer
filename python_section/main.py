@@ -662,9 +662,64 @@ sketch : Cheese Shop Sketch
 
 
 #####Exceptions and Errors
-while True:
+# while True:
+#     try:
+#         x = int(input("Enter number please: "))
+#         break
+#     except ValueError:
+#         print("Oops, That was no valid number, try again please")
+
+# while True:
+#     try:
+#         n1 = int(input("Enter first number: "))
+#         n2 = int(input("Enter second number: "))
+#         result = n1//n2
+#     except ZeroDivisionError:
+#         print("Input please for n2 non zero number")
+#
+#     else:
+#         print(f'This is result {result}')
+#         break
+
+# try:
+#     raise ValueError('This is Value Error')
+# except ValueError as e:
+#     raise
+
+# try:
+#     raise NameError('HiThere')
+# except NameError:
+#     print('An exception flew by!')
+#     raise
+
+####using from
+
+# def open_sqlight():
+#     raise OSError
+#
+# try:
+#     open_sqlight()
+#
+# except OSError as e:
+#     raise RuntimeError('Failed open database') from e
+
+####rules with try exception finally
+# def bool_return():
+#     try:
+#         return True
+#     finally:
+#         return False
+#
+# print(bool_return())
+
+def divide(x,y):
     try:
-        x = int(input("Enter number please: "))
-        break
-    except ValueError:
-        print("Oops, That was no valid number, try again please")
+        result = x//y
+    except ZeroDivisionError:
+        print("division by zero!")
+    else:
+        print(f"this is result {result}")
+    finally:
+        print('Executing finally clause')
+
+divide('2',"5")
