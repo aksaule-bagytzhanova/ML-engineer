@@ -712,14 +712,55 @@ sketch : Cheese Shop Sketch
 #
 # print(bool_return())
 
-def divide(x,y):
-    try:
-        result = x//y
-    except ZeroDivisionError:
-        print("division by zero!")
-    else:
-        print(f"this is result {result}")
-    finally:
-        print('Executing finally clause')
+# def divide(x,y):
+#     try:
+#         result = x//y
+#     except ZeroDivisionError:
+#         print("division by zero!")
+#     else:
+#         print(f"this is result {result}")
+#     finally:
+#         print('Executing finally clause')
+#
+# divide('2',"5")
 
-divide('2',"5")
+
+# with open("workfile") as f:
+#     for line in f:
+#         print(line, end="")
+#
+
+##########Chapter 8.9
+
+# def f():
+#     excs = [OSError('error 1'), SystemError('error 2')]
+#     raise ExceptionGroup('there are problems', excs)
+#
+#
+# try:
+#     f()
+# except Exception as e:
+#     print(f'caught {type(e)}: e')
+#
+
+
+def f():
+    raise ExceptionGroup('group1', [
+        OSError(1),
+        SystemError(2),
+        ExceptionGroup(
+            "group2",
+            [
+                OSError(3),
+                RecursionError(4)
+            ]
+        )
+    ])
+
+try:
+    f()
+except* OSError as e:
+    print("There were OSErrors")
+
+except* SystemError as e:
+    print("There were SystemErrors")
