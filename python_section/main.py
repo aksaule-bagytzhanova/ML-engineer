@@ -744,23 +744,75 @@ sketch : Cheese Shop Sketch
 #
 
 
-def f():
-    raise ExceptionGroup('group1', [
-        OSError(1),
-        SystemError(2),
-        ExceptionGroup(
-            "group2",
-            [
-                OSError(3),
-                RecursionError(4)
-            ]
-        )
-    ])
+# def f():
+#     raise ExceptionGroup('group1', [
+#         OSError(1),
+#         SystemError(2),
+#         ExceptionGroup(
+#             "group2",
+#             [
+#                 OSError(3),
+#                 RecursionError(4)
+#             ]
+#         )
+#     ])
+#
+# try:
+#     f()
+# except* OSError as e:
+#     print("There were OSErrors")
+#
+# except* SystemError as e:
+#     print("There were SystemErrors")
 
-try:
-    f()
-except* OSError as e:
-    print("There were OSErrors")
 
-except* SystemError as e:
-    print("There were SystemErrors")
+###########Class 9
+# def scope_test():
+#     def do_local():
+#         spam = "local spam"
+#
+#     def do_nonlocal():
+#         nonlocal spam
+#         spam = "nonlocal spam"
+#
+#     def do_global():
+#         global spam
+#         spam = "global spam"
+#
+#     spam = "this is spam text"
+#
+#     do_local()
+#     print("After local assignment:", spam)
+#
+#     do_nonlocal()
+#     print("After nonlocal assignment:", spam)
+#
+#     do_global()
+#     print("After global assignment:", spam)
+#
+# scope_test()                             # запускаем тест
+#
+# print("In global scope:", spam)
+
+#########9.3.2
+
+# class Dog:
+#     name = "Barsik"
+#
+#     def bark(self):
+#         print("Woof!")
+#
+# n1 = Dog()
+# n1.bark()
+
+#########9.3.3
+
+class Complex:
+    def __init__(self, realpart, imagpart):
+        self.realp = realpart
+        self.img = imagpart
+
+
+x = Complex(44, 0.3)
+print("This is realp", x.realp)
+print("This is imag", x.img)
