@@ -807,12 +807,26 @@ sketch : Cheese Shop Sketch
 
 #########9.3.3
 
-class Complex:
-    def __init__(self, realpart, imagpart):
-        self.realp = realpart
-        self.img = imagpart
+# class Complex:
+#     def __init__(self, realpart, imagpart):
+#         self.realp = realpart
+#         self.img = imagpart
+#
+#
+# x = Complex(44, 0.3)
+# print("This is realp", x.realp)
+# print("This is imag", x.img)
 
 
-x = Complex(44, 0.3)
-print("This is realp", x.realp)
-print("This is imag", x.img)
+
+##############9.3.4
+class Aksi:
+    def f(self):
+        print('Hi')
+
+
+a = Aksi()
+a.f()
+
+e = a.f
+e()
