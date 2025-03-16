@@ -820,13 +820,37 @@ sketch : Cheese Shop Sketch
 
 
 ##############9.3.4
-class Aksi:
-    def f(self):
-        print('Hi')
+# class Aksi:
+#     def f(self):
+#         print('Hi')
+#
+#
+# a = Aksi()
+# a.f()
+#
+# e = a.f
+# e()
 
 
-a = Aksi()
-a.f()
+###########9.3.5
+class Dog:
+    kind = 'canine'
 
-e = a.f
-e()
+
+    def __init__(self, name):
+        self.name = name
+        self.tricks = []
+
+    def print_name(self):
+        print(self.name)
+
+    def add_trick(self, trick):
+        self.tricks.append(trick)
+
+
+dog1 = Dog("Recks")
+dog1.print_name()
+
+
+dog2 = Dog("Sally")
+dog2.print_name()
