@@ -833,24 +833,43 @@ sketch : Cheese Shop Sketch
 
 
 ###########9.3.5
-class Dog:
-    kind = 'canine'
+# class Dog:
+#     kind = 'canine'
+#
+#
+#     def __init__(self, name):
+#         self.name = name
+#         self.tricks = []
+#
+#     def print_name(self):
+#         print(self.name)
+#
+#     def add_trick(self, trick):
+#         self.tricks.append(trick)
+#
+#
+# dog1 = Dog("Recks")
+# dog1.print_name()
+#
+#
+# dog2 = Dog("Sally")
+# dog2.print_name()
 
 
-    def __init__(self, name):
-        self.name = name
-        self.tricks = []
 
-    def print_name(self):
-        print(self.name)
+############9.4
+class Bag:
 
-    def add_trick(self, trick):
-        self.tricks.append(trick)
+    def __init__(self):
+        self.data = []
 
+    def add_to_list(self, x):
+        self.data.append(x)
 
-dog1 = Dog("Recks")
-dog1.print_name()
+    def add_2(self, x):
+        self.add_to_list(x)
 
-
-dog2 = Dog("Sally")
-dog2.print_name()
+aks = Bag()
+aks.add_to_list(3)
+aks.add_2(2)
+print(aks.data)
