@@ -858,18 +858,18 @@ sketch : Cheese Shop Sketch
 
 
 ############9.4
-class Bag:
-
-    def __init__(self):
-        self.data = []
-
-    def add_to_list(self, x):
-        self.data.append(x)
-
-    def add_2(self, x):
-        self.add_to_list(x)
-
-aks = Bag()
-aks.add_to_list(3)
-aks.add_2(2)
-print(aks.data)
+# class Bag:
+#
+#     def __init__(self):
+#         self.data = []
+#
+#     def add_to_list(self, x):
+#         self.data.append(x)
+#
+#     def add_2(self, x):
+#         self.add_to_list(x)
+#
+# aks = Bag()
+# aks.add_to_list(3)
+# aks.add_2(2)
+# print(aks.data)
