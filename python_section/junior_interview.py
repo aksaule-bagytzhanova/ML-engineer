@@ -44,3 +44,9 @@ from collections import UserString
 # USING PRODUCTS P
 # LEFT JOIN PRODUCERS PR ON P.PRODUCER_ID = PR.ID
 # WHERE PR.ID IS NULL
+
+
+print("".join(reversed("12344567")))
+
+
+

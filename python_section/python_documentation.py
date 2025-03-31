@@ -873,3 +873,24 @@ sketch : Cheese Shop Sketch
 # aks.add_to_list(3)
 # aks.add_2(2)
 # print(aks.data)
+
+
+##############9.5
+class Parent:
+    def greet(self):
+        return "Hello from Parent class"
+
+
+class Child(Parent):
+    pass
+
+class Child_2(Parent):
+    def greet(self):
+        return super().greet() + "and Child class"
+
+er = Child()
+
+print(er.greet())
+
+er1 = Child_2()
+print(er1.greet())
